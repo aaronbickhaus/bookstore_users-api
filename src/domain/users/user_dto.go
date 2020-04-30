@@ -1,7 +1,7 @@
 package users
 
 import (
-	"github.com/aaronbickhaus/bookstore_users-api/utils/errors"
+	"github.com/aaronbickhaus/bookstore_users-api/src/utils/errors"
 	"strings"
 )
 
@@ -15,7 +15,7 @@ type User struct {
 	Password string `json:"password"`
 }
 
-type Users [] User
+type Users []User
 
 const (
 	StatusActive = "active"

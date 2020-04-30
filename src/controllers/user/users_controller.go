@@ -1,9 +1,9 @@
 package user
 
 import (
-	"github.com/aaronbickhaus/bookstore_users-api/domain/users"
-	"github.com/aaronbickhaus/bookstore_users-api/services"
-	"github.com/aaronbickhaus/bookstore_users-api/utils/errors"
+	"github.com/aaronbickhaus/bookstore_users-api/src/domain/users"
+	"github.com/aaronbickhaus/bookstore_users-api/src/services"
+	"github.com/aaronbickhaus/bookstore_users-api/src/utils/errors"
 	"github.com/gin-gonic/gin"
 	"net/http"
 	"strconv"
@@ -29,7 +29,7 @@ func Get(c *gin.Context) {
 }
 
 func Create(c *gin.Context) {
-	 var user  users.User
+	 var user users.User
 	 if err := c.ShouldBindJSON(&user); err != nil {
   		restErr := errors.NewBadRequestError("invalid json body")
 		c.JSON(restErr.Status, restErr)
@@ -85,7 +85,7 @@ func Update(c *gin.Context) {
 		return
 	}
 
-	var user  users.User
+	var user users.User
 	if err := c.ShouldBindJSON(&user); err != nil {
 		restErr := errors.NewBadRequestError("invalid json body")
 		c.JSON(restErr.Status, restErr)

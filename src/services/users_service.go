@@ -1,10 +1,10 @@
 package services
 
 import (
-	"github.com/aaronbickhaus/bookstore_users-api/domain/users"
-	"github.com/aaronbickhaus/bookstore_users-api/utils/crypto_utils"
-	"github.com/aaronbickhaus/bookstore_users-api/utils/date_utiils"
-	"github.com/aaronbickhaus/bookstore_users-api/utils/errors"
+	"github.com/aaronbickhaus/bookstore_users-api/src/domain/users"
+	"github.com/aaronbickhaus/bookstore_users-api/src/utils/crypto_utils"
+	"github.com/aaronbickhaus/bookstore_users-api/src/utils/date_utiils"
+	"github.com/aaronbickhaus/bookstore_users-api/src/utils/errors"
 )
 
 var (
